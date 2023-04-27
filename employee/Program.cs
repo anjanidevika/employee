@@ -25,10 +25,17 @@ public class Employee
         if (hours > 6)
             salary += 5;
         Console.WriteLine("the final salary of the employee is $ " + salary);
+        Console.WriteLine("\n");
     }
 
     public static void Main()
     {
-        getinfo();
+        Console.WriteLine("Enter the number of employees:");
+        int n= Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < n; i++)
+        {
+           // Console.WriteLine("\n");
+            getinfo();
+        }
     }
 }
